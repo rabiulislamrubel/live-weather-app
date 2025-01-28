@@ -49,8 +49,10 @@ export default function Page() {
   return (
     <>
       {status.state == "loading" ? (
-        <div>
-          <p>{status.message}</p>
+        <div className="flex items-center justify-center h-screen w-screen">
+          <p className="text-2xl text-black bg-slate-500 p-3">
+            {status.message}
+          </p>
         </div>
       ) : (
         <div
